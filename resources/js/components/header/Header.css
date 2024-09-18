@@ -5,4 +5,48 @@ background-color: white;
 
 .Header{
     background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+.Container{
+    width: 80% ;
+    max-width: 1280px;
+    justify-content: space-between;
+    display: flex;
+    background-color: transparent;
+}
+
+.Logo{
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: transparent;
+}
+.Login-Nav{
+display: flex;
+gap: 20px;
+background-color: transparent;
+}
+
+.Nav{
+    background-color: transparent;
+
+}
+
+.Login-Button{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+.SignUp-Button{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
 }
