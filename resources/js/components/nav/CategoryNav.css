@@ -1,0 +1,9 @@
+.Nav-Item{
+    white-space: nowrap;
+    font-size: 20px;
+}
+.Nav-Item:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    
+}
