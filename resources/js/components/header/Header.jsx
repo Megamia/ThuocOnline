@@ -1,15 +1,20 @@
 import React from "react";
 import "./Header.css";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
     return (
         <div class="Header">
             <div class="Container">
                 <div class="Logo">Thuoc So Online.COM</div>
-                <div class="Nav"> Home, About, Contact</div>
+                <div class="Nav"  > Home, About, Contact</div>
                 <div class="Login-Nav">
-                    <div class="Login-Button">Đăng Nhập</div>
-                    <div class="SignUp-Button">Đăng Ký</div>
+                    <div class="Login-Button" >Đăng Nhập</div>
+                    <NavLink to="/SignUpSignIn" >
+                        <div class="SignUp-Button">
+                            Đăng Ký
+                        </div>
+                    </NavLink>
                 </div>
             </div>
         </div>

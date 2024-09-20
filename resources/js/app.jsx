@@ -1,10 +1,11 @@
-import './bootstrap';
 import React from 'react';
-import { createRoot } from 'react-dom/client';
-import Home from './pages/home/Home';
-import SignUpSignIn from './pages/signupsignin/SignupSignin';
+import ReactDOM from 'react-dom/client';
+import AppRouter from './router';
 
-const rootElement = document.getElementById('app');
-if (rootElement) {
-    createRoot(rootElement).render(<SignUpSignIn />);
-}
+const root = ReactDOM.createRoot(document.getElementById('app'));
+root.render(
+  <React.StrictMode>
+    <AppRouter />
+  </React.StrictMode>,
+);
+
