@@ -7,23 +7,21 @@ function SignUpSignIn() {
 
     const [username, setUsername] = useState([]);
     const [password, setPassword] = useState([]);
-
     const Login = async () => {
-        // console.log(`${process.env.REACT_APP_API_URL}/Login`);
-        // console.log(import.meta.env.APP_URL_API)
-        // try {
-        //     const response = await axios.post(`${import.meta.env.APP_URL_API}`, {
-        //         username:username,
-        //         password:password
-        //     });
-        //     if (response.data.status === 1) {
-        //         console.log("Login success");
-        //     } else {
-        //         console.log("Login faile");
-        //     }
-        // } catch (e) {
-        //     console.log("Error: ", e);
-        // }
+
+        try {
+            const response = await axios.post(`${import.meta.env.VITE_APP_URL_API}/Login`, {
+                username:username,
+                password:password
+            });
+            if (response.data.status === 1) {
+                console.log("Login success");
+            } else {
+                console.log("Login faile");
+            }
+        } catch (e) {
+            console.log("Error: ", e);
+        }
     }
     return (
         <div class="SignUpSignIn">
