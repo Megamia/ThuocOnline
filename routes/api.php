@@ -1,6 +1,7 @@
 <?php
 
-use App\Models\Users;
+use App\Http\Controllers\users_controller;
 use Illuminate\Support\Facades\Route;
 
-Route::post('Login', [Users::class, 'Login']);
+Route::post('Login', [users_controller::class, 'Login']);
+Route::get('getData', [users_controller::class, 'getData']);

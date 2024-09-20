@@ -7,7 +7,6 @@ function SignUpSignIn() {
 
     const [username, setUsername] = useState([]);
     const [password, setPassword] = useState([]);
-
     const Login = async () => {
         console.log(`${process.env.REACT_APP_API_URL}/Login`);
         console.log(import.meta.env.APP_URL_API)

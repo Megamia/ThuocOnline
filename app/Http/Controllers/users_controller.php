@@ -23,4 +23,13 @@ class users_controller extends Controller
             return response()->json(['status' => 0, 'data' => 'No data']);
         }
     }
+    public function getData(Request $request)
+    {
+        $data = Users::all();
+        if ($data->count() > 0) {
+            return response()->json(['status' => 1, 'data' => $data]);
+        } else {
+            return response()->json(['status' => 0, 'data' => 'No data']);
+        }
+    }
 }

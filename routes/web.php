@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
@@ -9,5 +8,5 @@ Route::prefix('/api')->group(function () {
     include_once __DIR__.'/api.php';
 });
 
-Route::view('/',"App");
-Route::view('/{any}',"app")->where("any",".*");
+Route::view('/', "App");
+Route::view('/{any}', "app")->where("any", ".*");
