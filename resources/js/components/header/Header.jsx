@@ -10,7 +10,7 @@ function Header() {
                 <div class="Nav"  > Home, About, Contact</div>
                 <div class="Login-Nav">
                     <div class="Login-Button" >Đăng Nhập</div>
-                    <NavLink to="/SignUpSignIn" >
+                    <NavLink to="/SignUpSignIn" className="flex flex-1 bg-[#00FFFF]">
                         <div class="SignUp-Button">
                             Đăng Ký
                         </div>
