@@ -4,7 +4,6 @@ import "./SignUpSignIn.css";
 import axios from "axios";
 
 function SignUpSignIn() {
-
     const [username, setUsername] = useState([]);
     const [password, setPassword] = useState([]);
     const Login = async () => {
