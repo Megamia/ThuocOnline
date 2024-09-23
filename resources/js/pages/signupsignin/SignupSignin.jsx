@@ -8,10 +8,8 @@ function SignUpSignIn() {
     const [username, setUsername] = useState([]);
     const [password, setPassword] = useState([]);
     const Login = async () => {
-        console.log(`${process.env.REACT_APP_API_URL}/Login`);
-        console.log(import.meta.env.APP_URL_API)
         try {
-            const response = await axios.post(`${import.meta.env.APP_URL_API}`, {
+            const response = await axios.post(`${import.meta.env.VITE_APP_URL_API}/Login`, {
                 username:username,
                 password:password
             });
